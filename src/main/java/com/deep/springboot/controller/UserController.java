@@ -25,6 +25,6 @@ public class UserController {
 	
 	@GetMapping (path = "/getUser")
 	protected List<Userentity> getUser() {
-		return service.getUser();
+	return service.getUser();
 	}
 }
