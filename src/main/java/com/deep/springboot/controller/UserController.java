@@ -19,6 +19,8 @@ public class UserController {
 	private UserService service;
 	
 	@PostMapping (path = "/addUser")
+	@CrossOrigin(origins = "*")
+
 	protected Userentity addUser(Userentity userentity) {
 		return service.addUser(userentity);
 	}
