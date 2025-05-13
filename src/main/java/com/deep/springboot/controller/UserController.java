@@ -19,7 +19,7 @@ public class UserController {
 	private UserService service;
 	
 	@PostMapping (path = "/addUser")
-	protected Userentity addUser(Userentity userentity) {
+	protected Userentity addUser(@RequestBody Userentity userentity) {
 		return service.addUser(userentity);
 	}
 	
