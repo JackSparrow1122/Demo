@@ -18,8 +18,8 @@ public class Userentity {
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
-	int id;
-	String name;
-	String address;
-	long number;
+	private int id;
+	private String name;
+	private String address;
+	private long number;
 }
